@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".ViewPagerImg">
+
+    <TextView
+        android:id="@+id/titleOne"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="clipToPadding+PageTransformer 注意：viewPager要使用paddingStart和paddingEnd属性
+这样一个界面才会出现多个图片"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/clipPaddingVpg"
+        android:layout_below="@+id/titleOne"
+        android:layout_width="match_parent"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:clipToPadding="false"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/titleTwo"
+        android:padding="5dp"
+        android:layout_below="@+id/clipPaddingVpg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="clipChildren+PageTransformer 注意：viewPager要使用marginStart和marginEnd属性
+这样一个界面才会出现多个图片"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/clipChildrenVpg"
+        android:layout_below="@+id/titleTwo"
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:clipChildren="false"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/titleThree"
+        android:padding="5dp"
+        android:layout_below="@+id/clipChildrenVpg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图片无限轮播"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/playerVpg"
+        android:layout_below="@+id/titleThree"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+</RelativeLayout>

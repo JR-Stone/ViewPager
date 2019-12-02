@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_above="@+id/footer" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ic_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/receive_select"
+            android:text="首页"
+            android:textColor="@drawable/index_select_color" />
+
+        <TextView
+            android:id="@+id/ic_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="嘿嘿"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/order_select"
+            android:textColor="@drawable/index_select_color" />
+
+        <LinearLayout
+            android:id="@+id/centerFl"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:background="@drawable/middle_circle">
+
+            <ImageView
+                android:id="@+id/middleRotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_and" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ic_subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="哈哈"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/subscribe_select"
+            android:textColor="@drawable/index_select_color" />
+
+        <TextView
+            android:id="@+id/ic_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="呵呵"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/mine_select"
+            android:textColor="@drawable/index_select_color" />
+
+    </LinearLayout>
+</RelativeLayout>

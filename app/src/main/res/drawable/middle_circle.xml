@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 矩形圆角+圆出一个圆弧 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--&lt;!&ndash; 边框颜色值 &ndash;&gt;
+    <item>
+        <shape>
+            <solid android:color="#eee" />
+            <corners android:radius="@dimen/scale_sixty" />
+        </shape>
+    </item>-->
+
+    <item android:top="1dp"> <!--设置只有底部有边框-->
+        <shape
+            android:shape="rectangle"
+            android:useLevel="true">
+            <size
+                android:width="60dp"
+                android:height="60dp" />
+            <solid android:color="#FFF" />
+
+            <corners android:radius="60dp" />
+
+        </shape>
+    </item>
+</layer-list>
